@@ -1,0 +1,176 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61; /* Hover color */
+}
+
+/* Main Content Section */
+main {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Featured Section */
+.featured {
+    grid-column: span 2; /* Featured takes up the first two columns */
+    display: flex;
+    gap: 20px;
+}
+
+.featured-article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.featured-article:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.featured-article h2 {
+    font-family: 'Merriweather', serif;
+    color: #333;
+}
+
+.featured-article p {
+    color: #777;
+    font-size: 1em;
+}
+
+/* Columns Section */
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.column {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.column h3 {
+    font-family: 'Merriweather', serif;
+    color: #333;
+}
+
+.column p {
+    color: #777;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h4 {
+    font-family: 'Merriweather', serif;
+    color: #333;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #333;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .featured {
+        flex-direction: column;
+    }
+
+    .columns {
+        grid-template-columns: 1fr;
+    }
+}
